@@ -1,0 +1,8 @@
+import requests
+res =requests.get(
+    url = "https://api.bilibili.com/x/member/web/account?web_location=333.3",
+    headers ={
+    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
+    "Cookie":"buvid3=A6D99DCD-4952-59F5-8C8A-9C71B34821B520774infoc; b_nut=1687171720; i-wanna-go-back=-1; _uuid=E4DAFF3D-3104E-1E2B-F1B1-B76BB42BC37E19424infoc; FEED_LIVE_VERSION=V8; rpdid=|(J~|kYmm|mY0J'uY)~u~u~kJ; header_theme_version=CLOSE; buvid_fp_plain=undefined; nostalgia_conf=-1; DedeUserID=269451228; DedeUserID__ckMd5=81e881c3a98b9497; b_ut=5; hit-dyn-v2=1; enable_web_push=DISABLE; CURRENT_BLACKGAP=0; is-2022-channel=1; buvid4=A1B3936F-644D-309E-2451-4FC0937F78FD21804-023061918-VzWr9%2Fxmi9C29I5t%2BWCT5g%3D%3D; CURRENT_QUALITY=80; CURRENT_FNVAL=4048; SESSDATA=9a2de05a%2C1723939036%2C547e9%2A21CjB_c3ogiQKgWdv9n-qNQymLuCJRnvNJ4DxzbpMbH3MNPQT594bsam3t_IrNULFXtaASVkZxNVd6YzBodkZhTHhjdURlb0k4OGp1Z2F4aHcyU0JWQnllYjVma0gzajJ5MjJMaFBFN1l0ZUloNTUybTRLVklYMlVpM0lZTWFQOHpjcktYWkw4VFlBIIEC; bili_jct=0a51e2a2cbc4a0a204bd955d30e03351; sid=7uhx4b6x; b_lsid=B7AAFCB4_18DCBD55D38; home_feed_column=4; browser_resolution=1297-746; bp_video_offset_269451228=900590896110632981; fingerprint=1b307efd5bb3814b98f811ac3727b8ee; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDg3ODM0MTIsImlhdCI6MTcwODUyNDE1MiwicGx0IjotMX0.Ee-KyTC52A18St6TtFTzI36nj_En-WYgChxeKWt4sEY; bili_ticket_expires=1708783352; PVID=1; buvid_fp=7a8c4d8e33fe8dd0e6d76d482c9ef009"    }
+)
+print(res.text)
